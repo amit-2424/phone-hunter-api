@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="max-w-7xl m-auto">
+        <section class="bg-gray-200 mt-10 p-3 flex justify-end gap-2 rounded-xl">
+            <input id="input-field" type="text" placeholder="search" class="input input-bordered w-full max-w-xs" />
+            <button onclick="searchBtn()" id="input-button" class="btn btn-accent">search</button>
+        </section>
+        <section class="container m-auto mt-10">
+            <div id="loadingSpinner" class="text-center my-32 hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+            </div>
+            <!-- show all button -->
+            <div id="show-all-container" class="text-center my-10 hidden">
+                <button onclick="showAll()" class="btn btn-outline">show all</button>
+            </div>
+        </section>
+
+        <!-- You can open the modal using ID.showModal() method -->
+        <dialog id="my_modal_3" class="modal">
+            <div id="modal-container" class="modal-box text-center bg-white">
+                
+            </div>
+        </dialog>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
